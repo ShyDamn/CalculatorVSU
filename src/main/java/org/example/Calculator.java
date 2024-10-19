@@ -1,41 +1,65 @@
 package org.example;
 
-public class Calculator {
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-    public int add(int a, int b) {
-        return a + b;
+public interface Calculator {
+    Logger logger = LogManager.getLogger(Calculator.class);
+
+    public static int add(int a, int b) {
+        logger.info("Вызов метода add");
+        int result = a + b;
+        logger.info("Операция сложения: {} + {} = {}", a, b, result);
+        return result;
     }
 
-    public int subtract(int a, int b) {
-        return a - b;
-    }
-
-    public int multiply(int a, int b) {
-        return a * b;
-    }
-
-    public int divide(int a, int b) {
+    public static int div(int a, int b) {
+        logger.info("Вызов метода div");
         if (b == 0) {
-            throw new ArithmeticException("Деление на ноль!");
+            logger.error("Попытка деления на ноль: {} / {}", a, b);
+            throw new ArithmeticException("Деление на ноль");
         }
-        return a / b;
+        int result = a / b;
+        logger.info("Операция деления: {} / {} = {}", a, b, result);
+        return result;
     }
 
-    public double divide(double a, double b) {
-        if (b == 0) {
-            throw new ArithmeticException("Деление на ноль!");
-        }
-        return a / b;
+    public static int multiplication(int a, int b) {
+        logger.info("Вызов метода multiplication");
+        int result = a * b;
+        logger.info("Операция умножения: {} * {} = {}", a, b, result);
+        return result;
     }
 
-    public double sqrt(double a) {
+    public static int difference(int a, int b) {
+        logger.info("Вызов метода difference");
+        int result = a - b;
+        logger.info("Операция вычитания: {} - {} = {}", a, b, result);
+        return result;
+    }
+
+    public static int power(int base, int exponent) {
+        logger.info("Вызов метода power");
+        int result = (int) Math.pow(base, exponent);
+        logger.info("Операция возведения в степень: {} ^ {} = {}", base, exponent, result);
+        return result;
+    }
+
+    public static double sqrt(int a) {
+        logger.info("Вызов метода sqrt");
         if (a < 0) {
-            throw new ArithmeticException("Корень из отрицательного числа!");
+            logger.error("Попытка извлечения корня из отрицательного числа: √{}", a);
+            throw new IllegalArgumentException("Невозможно извлечь корень из отрицательного числа");
         }
-        return Math.sqrt(a);
+        double result = Math.sqrt(a);
+        logger.info("Операция извлечения корня: √{} = {}", a, result);
+        return result;
     }
 
-    public double power(double base, double exponent) {
-        return Math.pow(base, exponent);
+    public static int abs(int a) {
+        logger.info("Вызов метода abs");
+        int result = Math.abs(a);
+        logger.info("Операция нахождения модуля: |{}| = {}", a, result);
+        return result;
     }
 }
