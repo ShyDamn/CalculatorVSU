@@ -1,9 +1,9 @@
 # 🧮 Java Calculator Application
 
-## 🌟 Overview / Обзор
+## 🌟 Overview
 This Java project is a simple calculator application that demonstrates basic arithmetic operations along with logging features using Log4j. It includes unit tests to ensure correctness and reliability of the calculator methods.
 
-## 📂 Project Structure / Структура проекта
+## 📂 Project Structure
 The project is structured into the following components:
 
 - **Calculator Interface (`Calculator.java`)**: Contains static methods for all arithmetic operations. Each method also logs its usage and any errors encountered.
@@ -69,10 +69,10 @@ Here is an example of what to expect when running the application:
 
 All operations will also be logged in the `logs/calculator.log` file.
 
-## 🧪 Unit Testing / Юнит-тестирование
+## 🧪 Unit Testing
 The project has a suite of unit tests in `CalculatorTest.java` that test each method in the calculator, ensuring they work as expected. Edge cases, such as division by zero and square root of a negative number, are also covered.
 
-## 📜 License / Лицензия
+## 📜 License
 This project is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
