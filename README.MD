@@ -122,22 +122,6 @@ This project is released under the [MIT License](https://opensource.org/licenses
 
 Проект выпущен под лицензией [MIT License](https://opensource.org/licenses/MIT).
 
-## ✍️ Author / Автор
-This project was created by [Your Name]. Contributions are welcome! Feel free to open issues or submit pull requests.
-
-Этот проект создан [Ваше имя]. Вклады приветствуются! Не стесняйтесь открывать проблемы или отправлять запросы на изменение.
-
-## 🤝 Contribution Guidelines / Правила вклада
-- Fork the repository. / Форкните репозиторий.
-- Create a feature branch. / Создайте ветку для новой функции.
-- Commit your changes. / Зафиксируйте изменения.
-- Open a pull request. / Откройте pull request.
-
-## 📬 Contact / Контакт
-For any questions or issues, feel free to reach out.
-
-Для любых вопросов или проблем не стесняйтесь обращаться.
-
 ---
 
 ✨ Enjoy using the calculator and happy coding! / Наслаждайтесь использованием калькулятора и приятного кодинга! ✨
