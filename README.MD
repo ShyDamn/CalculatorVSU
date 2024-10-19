@@ -59,7 +59,7 @@ The project uses the following dependencies:
 ## ▶️ How to Run / Как запустить
 1. **Clone the Repository / Клонировать репозиторий**
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/ShyDamn/CalculatorVSU.git
    cd laba
    ```
 
