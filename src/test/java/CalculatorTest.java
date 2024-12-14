@@ -1,4 +1,5 @@
 import org.example.Calculator;
+import org.example.Main;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.MockitoAnnotations;
@@ -56,5 +57,11 @@ public class CalculatorTest {
     public void testAbs() {
         assertEquals(5, Calculator.abs(-5));
         assertEquals(5, Calculator.abs(5));
+    }
+
+    @Test
+    public void testMain() {
+        String[] args = new String[0];
+        Main.main(args);
     }
 }
